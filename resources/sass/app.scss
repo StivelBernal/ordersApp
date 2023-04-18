@@ -94,6 +94,19 @@ h1, h2, h3 {
   position: relative;
   // min-height: 100vh;
   margin: 0 auto !important;
+  z-index: 1;
+  h1, h3 {
+    color: #fff;
+    text-shadow: 2px 0px 2px black;
+  }
+}
+
+code {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  display: block;
+  margin-bottom: 20px; 
 }
 
 .AppTitle {
