@@ -1,0 +1,25 @@
+.SearchOrderComponent {
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  box-shadow: 2px 4px 5px #00000030;
+  margin: 40px auto;
+  padding: 20px 30px;
+  max-width: 96vw;
+  width: 500px;
+
+  .fxInputContainer {
+    width: 100%;
+  }
+  button {
+    height: 40px;
+    margin: 0 auto;
+  }
+
+  .message {
+    background-color: rgb(129, 221, 221);
+    border-radius: 4px;
+    color: rgb(40, 41, 41);
+    font-weight: bold;
+    padding: 8px 16px;
+  }
+}

@@ -1,0 +1,29 @@
+.OrderDetailsComponent {
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  box-shadow: 2px 4px 5px #00000030;
+  margin: 40px auto;
+  padding: 20px 30px;
+  max-width: 96vw;
+  width: 600px;
+
+  .actions {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    button {
+      height: 40px;
+      margin: 0;
+      width: max-content;
+      &.close {
+        background-color: rgb(202, 70, 70);
+        &:hover {
+          background-color: rgb(223, 91, 91);
+        }
+      }
+    }
+  }
+
+}
