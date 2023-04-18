@@ -7,6 +7,64 @@
   max-width: 96vw;
   width: 600px;
 
+  .OrderDetailsComponentContent {
+    .OrderDetailsComponentSubtitle {
+      font-size: 18px;
+      color: #252525;
+    }
+  }
+
+  .OrderDetailsTable {
+    border: 1px solid black;
+    width: 100%;
+    --colums: 1fr 100px 0.6fr;
+    .OrderDetailsTableHead {
+      align-items: center;
+      background-color: #00000020;
+      display: grid;
+      grid-template-columns: var(--colums);
+      height: 28px;
+      width: 100%;
+      > div {
+        align-items: center;
+        border-right: 1px solid black;
+        color: #252525;
+        display: flex;
+        font-size: 16px;
+        font-weight: bold;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+    .OrderDetailsTableList {
+      display: flex;
+      flex-direction: column;
+      .OrderDetailsTableListItem {
+        align-items: center;
+        display: grid;
+        grid-template-columns: var(--colums);
+        height: 26px;
+        &:nth-child(odd) {
+          background-color: #00000010;
+        }
+        > div {
+          align-items: center;
+          border-right: 1px solid black;
+          display: flex;
+          height: 100%;
+          padding: 0 6px 0 10px;
+          &:last-child {
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
+
   .actions {
     align-items: center;
     display: flex;

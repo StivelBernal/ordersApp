@@ -29,11 +29,10 @@ const Navigate = () => {
   const { dataOrder } = useContext(ClientContext)
   return (
     <>
-      <OrderDetails />
-      {/* { !hasValue(dataOrder?.customer)
+      { !hasValue(dataOrder?.customer)
         ? <SearchOrder />
         : <OrderDetails />
-      } */}
+      }
     </>
   )
 }

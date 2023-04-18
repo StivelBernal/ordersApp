@@ -92,8 +92,15 @@ h1, h2, h3 {
 .content-wrapper {
   @include max-width-page;
   position: relative;
-  min-height: 100vh;
+  // min-height: 100vh;
   margin: 0 auto !important;
+}
+
+.AppTitle {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
 }
 
 .ClientApp {

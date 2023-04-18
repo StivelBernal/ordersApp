@@ -17,21 +17,25 @@ export const OrderDetails = () => {
 
   return (
     <div className='OrderDetailsComponent'>
-        <div className="AppTitle">Detalles del pedido</div>
+        
+        <div className="AppTitle m-b-20">Detalles del pedido</div>
 
         <div className='OrderDetailsComponentContent'>
-          <div className='OrderDetailsComponentSubtitle'><strong>Código: </strong> 2312312 </div>
-          <div className='OrderDetailsComponentSubtitle'><strong>Cliente: </strong> Brayan </div>
-          <div className='OrderDetailsComponentSubtitle'>
-            <strong>Dirección de entrega: </strong> 2312312
+          <div className='OrderDetailsComponentSubtitle m-b-10'><strong>Código: </strong> {dataOrder.order?.code} </div>
+          <div className='OrderDetailsComponentSubtitle m-b-10'>
+            <strong>Cliente: </strong>
+            {dataOrder.customer?.first_name} {dataOrder.customer?.last_name} 
+          </div>
+          <div className='OrderDetailsComponentSubtitle m-b-10'>
+            <strong>Dirección de entrega: </strong> {dataOrder.order?.delivery_address}
           </div>
 
           <div className='OrderDetailsComponentProductsList'>
             <OrderDetailsTable />
           </div>
 
-          <div className='OrderDetailsComponentSubtitle'><strong>Estado del pedido: </strong> Pendiente </div>
-          <div className='OrderDetailsComponentSubtitle'><strong>Fecha estimada de entrega: </strong> 28/23/1231 </div>
+          <div className='OrderDetailsComponentSubtitle m-b-10'><strong>Estado del pedido: </strong> {dataOrder.order?.status} </div>
+          <div className='OrderDetailsComponentSubtitle'><strong>Fecha estimada de entrega: </strong> {dataOrder.order?.delivery_date} </div>
 
         </div>
 

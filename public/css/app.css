@@ -67,7 +67,7 @@
   list-style: none;
 }
 .headerContainer .fix-header-container .fix-header-container-primary .fix-header-container-primary-content .menu-container .fixperto-primary-menu li a {
-  color: #002E72;
+  color: #272727;
   font-size: 1.4285714286rem;
   font-weight: 600;
   gap: 30px;
@@ -2669,8 +2669,14 @@ h1, h2, h3 {
   max-width: 1000px;
   width: 100%;
   position: relative;
-  min-height: 100vh;
   margin: 0 auto !important;
+}
+
+.AppTitle {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
 }
 
 .ClientApp {
