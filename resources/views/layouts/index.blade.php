@@ -13,9 +13,12 @@
   
   <div class="content-wrapper">
     {{-- content --}}
-    @yield('contentIndex')
+    <div class="content-wrapper-view">
+      @yield('contentIndex')
+    </div>
+
+    <div class="content-wrapper-bg"></div>
   </div>
-  <div class="content-wrapper-bg"></div>
 
   @include('partials.footer')
 
